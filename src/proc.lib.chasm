@@ -1,0 +1,18 @@
+
+.assembly extern mscorlib {}
+
+.assembly prochasm {}
+
+.namespace Chasm
+{
+	
+	.method public static hidebysig void DoX()
+	{
+	
+		ldstr "asdf"
+		call void [mscorlib]System.Console::WriteLine(string)
+		ret
+	
+	}
+
+}

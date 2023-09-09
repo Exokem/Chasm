@@ -1,0 +1,15 @@
+
+.assembly extern mscorlib {}
+
+.assembly chasm {}
+
+.method static void Main(string[])
+{
+	.entrypoint
+	.maxstack 1
+	
+	ldstr "test"
+	call void [mscorlib]System.Console::WriteLine(string)
+	
+	ret
+}
